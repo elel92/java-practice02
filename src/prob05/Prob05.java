@@ -33,6 +33,7 @@ public class Prob05 {
 					min = 1;
 					max = 100;
 					ans = rnd.nextInt(max) + 1;
+					System.out.println("");
 					System.out.println("수를 결정하였습니다. 맞추어보세요");
 					continue;
 				} else if(s.equals("n")) {
