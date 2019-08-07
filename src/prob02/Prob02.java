@@ -5,16 +5,20 @@ import java.util.Scanner;
 public class Prob02 {
 
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-
-		/* 키보드에서 배열 크기만큼 입력 받아 배열에 저장하는 코드 */
-		System.out.println( "5개의 숫자를 입력하세요." );
+		Scanner sc = new Scanner(System.in);
 		
-		/* 배열에 저장된 정수 값 더하기 */
+		System.out.print("입력할 개수 : ");
 		
-		/* 출력 */
+		int size = sc.nextInt();
+		double sum = 0;
 		
-		/* 자원정리 */
-		scanner.close();
+		for(int i = 0; i < size; i++) {
+			int input = sc.nextInt();
+			sum += input;
+		}
+		
+		System.out.println("평균은 " + sum / size + " 입니다.");
+		
+		sc.close();
 	}
 }
